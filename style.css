@@ -1,0 +1,174 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Card */
+.card {
+    width: 900px;
+    height: 600px;
+    background-color: #F4C430;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================== LEFT SECTION ==================== */
+
+.left-section {
+    width: 55%;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+/* Pokemon Logo */
+.pokemon-logo {
+    width: 120px;
+    margin-bottom: 80px;
+}
+
+.pokemon-logo svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.title {
+    font-size: 90px;
+    font-weight: 900;
+    color: #000;
+    line-height: 1;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.pagination-line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+}
+
+/* Pokeball Background Watermark */
+.pokeball-bg {
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 250px;
+    height: 250px;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.pokeball-bg svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ==================== RIGHT SECTION ==================== */
+
+.right-section {
+    width: 45%;
+    background-color: #FDE8B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Pikachu Image */
+.pikachu-img {
+    width: 380px;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+/* Dots Indicator */
+.dots-indicator {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F4C430;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #000;
+}
